@@ -16,6 +16,19 @@
 </head>
 <body>
 
+<pre>
+<b>note: this is for CS:GO only</b>
+<br />
+Get your steamID64:
+    - go to <a target="_blank" href="https://store.steampowered.com/account/">https://store.steampowered.com/account/</a>
+    - copy the long number below "ACCOUNT OF ..."
+
+Get the JSON:
+    - go to https://steamcommunity.com/inventory/<b>&lt;THE NUMBER FROM ABOVE&gt;</b>/730/2?l=en&count=5000
+    - Ctrl + a to select all ctrl + c to copy it and then paste it with ctrl + v into the textarea below
+</pre>
+<br />
+
 <textarea id="txt-inventory" placeholder="Paste inventory json here"></textarea>
 <button id="btn-parse" onclick="parseInventory()">Show me the money!</button>
 <div id="div-result"></div>
