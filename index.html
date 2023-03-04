@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
     <title>InventoryWorth</title>
 
     <style>
@@ -35,7 +37,7 @@
 
 
     function parseInventory() {
-        let inventory = JSON.parse(document.getElementById("txt-inventory").textContent);
+        let inventory = JSON.parse(document.getElementById("txt-inventory").value);
         let total = 0
 
         inventory.descriptions.forEach((item) => {
